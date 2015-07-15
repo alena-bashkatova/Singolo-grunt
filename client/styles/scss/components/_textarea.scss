@@ -1,0 +1,18 @@
+textarea {
+    display: block;
+    resize: none;
+    width: 620px;
+    height: 200px;
+    margin-top: 16px;
+    padding: 10px;
+    border: none;
+    background-color: #ca4549;
+    color: #fff;
+    @include placeholder(normal 13px "Lato", #f48c8f);
+    @include border-radius(5px);
+    @include box-sizing(border-box);
+
+    &:focus {
+        background-color: #e97478;
+    }
+}

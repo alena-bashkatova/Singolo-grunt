@@ -1,0 +1,26 @@
+.link {
+    margin-top: 10px;
+    font-size: 0;
+
+    li {
+        display: inline-block;
+        margin-right: 7px;
+
+        a {
+            display: inline-block;
+            padding: 5px;
+            border: 1px solid #666d89;
+            font: bold 12px "Lato Regular", sans-serif;
+            text-decoration: none;
+            color: #767e9e;
+            @include border-radius(5px);
+            @include transition-property(color, border);
+            @include transition-duration(400ms);
+
+            &:hover {
+                border: 1px solid white;
+                color: white;
+            }
+        }
+    }
+}

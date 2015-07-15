@@ -1,0 +1,20 @@
+{
+  "name": "singolo-grunt",
+  "version": "0.0.0",
+  "homepage": "https://github.com/alena-bashkatova/Singolo-grunt",
+  "authors": [
+    "alena-bashkatova <alenabashkatova@gmail.com>"
+  ],
+  "description": "new project",
+  "main": "index.html",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.4"
+  }
+}

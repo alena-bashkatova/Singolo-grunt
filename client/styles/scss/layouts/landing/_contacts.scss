@@ -1,0 +1,86 @@
+.contacts {
+    height: 700px;
+    background-color: #eb5055;
+    border-bottom: 6px solid #ea676b;
+
+    div {
+        h2 {
+            color: #f0d8d9;
+        }
+
+        p {
+            color: #f0d1d2;
+        }
+
+        .block {
+            margin-top: 30px;
+            form {
+                float: left;
+                width: 620px;
+                @include clearfix;
+            }
+
+            .info {
+                float: right;
+                margin-top: 15px;
+                width: 305px;
+                color: #f0d8d9;
+                @include clearfix;
+
+                h3 {
+                    padding-bottom: 10px;
+                    font: bold 18px "Lato", sans-serif;
+                }
+
+                p {
+                    font: normal 12px "Lato", sans-serif;
+                    line-height: 2;
+                    text-align: justify;
+                }
+
+                .cont {
+                    margin-top: 15px;
+                    font-size: 0;
+
+                    li {
+                        position: relative;
+                        margin-left: 20px;
+
+                        &::before {
+                            position: absolute;
+                            top: 5px;
+                            left: -20px;
+                            display: block;
+                            width: 13px;
+                            height: 13px;
+                            background: url(../../images/contacts/link.png);
+                            content: '';
+                        }
+                        &:first-child {
+                            &::before {
+                                background-position: 0 0;
+                            }
+                        }
+                        &:nth-child(2) {
+                            &::before {
+                                background-position: 0 -13px;
+                            }
+                        }
+                        &:last-child {
+                            &::before {
+                                background-position: 0 -26px;
+                            }
+                        }
+
+                        a {
+                            font: normal 12px "Lato", sans-serif;
+                            line-height: 2;
+                            text-decoration: none;
+                            color: #f0d8d9;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

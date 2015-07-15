@@ -1,0 +1,34 @@
+body {
+    width: 100%;
+
+    .container {
+        width: 940px;
+        height: 100%;
+        margin: 0 auto;
+        padding-bottom: 40px;
+        @include box-sizing(border-box);
+    }
+
+    main {
+        width: 100%;
+
+        section {
+            width: 100%;
+            @include box-sizing(border-box);
+
+            h2 {
+                padding-top: 40px;
+                font: bold 30px "Lato", sans-serif;
+                line-height: 76px;
+                color: #666d89;
+            }
+
+            p {
+                text-align: justify;
+                font: lighter 18px "Lato", sans-serif;
+                color: #767e9e;
+                line-height: 1.7;
+            }
+        }
+    }
+}

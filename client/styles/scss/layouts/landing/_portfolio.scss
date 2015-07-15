@@ -1,0 +1,54 @@
+.portfolio {
+    background-color: #303441;
+    border-bottom: 6px solid #373b4a;
+
+    .pictures {
+        margin-top: 5px;
+        font-size: 0;
+
+        figure {
+            display: inline-block;
+            margin-left: 20px;
+            margin-top: 15px;
+            position: relative;
+            overflow: hidden;
+            width: 220px;
+
+            &:nth-child(4n+1) {
+                margin-left: 0;
+            }
+
+            &:hover {
+                figcaption {
+                    width: 220px;
+                    height: 187px;
+                    @include opacity(1);
+                }
+            }
+
+            img {
+                width: 100%;
+            }
+
+            figcaption {
+                position: absolute;
+                top: 0;
+                left: 0;
+                display: block;
+                width: 0;
+                height: 0;
+                background-color: rgba(#ffffff, 0.7);
+                @include transition-property(all);
+                @include transition-duration(400ms);
+                @include opacity(0);
+
+                p {
+                    padding: 10px;
+                    font-size: 14px;
+                    font-weight: bold;
+                    color: black;
+                }
+            }
+        }
+    }
+}

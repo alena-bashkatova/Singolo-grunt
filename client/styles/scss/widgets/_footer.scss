@@ -1,0 +1,26 @@
+footer {
+    width: 100%;
+    height: 76px;
+    background-color: #303441;
+
+    div {
+        width: 1020px;
+        height: 100%;
+        margin: 0 auto;
+        padding: 0 40px;
+        @include box-sizing(border-box);
+        @include clearfix;
+
+        p {
+            float: left;
+            font: normal 12px "Lato Regular", sans-serif;
+            line-height: 76px;
+            color: #606781;
+        }
+
+        ul {
+            float: right;
+            margin-top: 23px;
+        }
+    }
+}

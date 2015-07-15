@@ -1,0 +1,21 @@
+.slider {
+    background-color: #eb5055;
+    border-bottom: 6px solid #ea676b;
+
+    .royalSlider {
+        height: 594px;
+
+        .rsOverflow.grab-cursor {
+            width: 100% !important;
+            background-color: #eb5055 !important;
+
+            .rsSlide {
+                background-color: #eb5055 !important;
+            }
+        }
+    }
+
+    .royalSlider .rsDefault .rsHor .rsWithBullets {
+        border-bottom: 10px solid #ea676b !important;
+    }
+}

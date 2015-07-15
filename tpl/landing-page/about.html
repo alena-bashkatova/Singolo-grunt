@@ -1,0 +1,16 @@
+<section class="about" id="about">
+    <div class="container">
+        <h2>About Us</h2>
+        @@include('text/description-block.html')
+        <div class="people">
+            @@include('components/about-us.html', {"image":"adam", "name": "Adam Jensen",
+            "description": "Quisque luctus quam eget molestie commodo, lacus purus cursus purus, nec rutrum tellus dolor id lorem."})
+
+            @@include('components/about-us.html', {"image":"desmond", "name": "Desmond Miles",
+            "description": "Curabitur vestibulum eget mauris quis laorit. Phasellus in quam laorit, viverra lacus ut, ultrices velit."})
+
+            @@include('components/about-us.html', {"image":"scolara", "name": "Scolara Visari",
+            "description": "Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis. Quisque condimentum."})
+        </div>
+    </div>
+</section>
